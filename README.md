@@ -1,33 +1,52 @@
-# Java - Basics - Testing
-  ### [Slides](https://github.com/dci-dh-java-e21-01/Testing/blob/main/12.%20Testing.pdf)
-##   Overview
+# Write Calculator Application using Test Driven Development
 
-The goal of this submodule is to learn how to write tests in Java to prevent bugs in the code.
+## Overview:
+Calculator Application contains 3 basic functionalities 
+1. Addition
+2. Subtraction
+3. Multiplication
 
-### Objectives
 
-By the end of this submodule, the learners should be able to:
+## Task
+Write Calculator Application using Test Driven Development
 
--   How to write tests in Java using JUnit;
--   Usage of Annotations
--   Usage of Assertions
--   Concepts of TDD
--   Usage of AssertJ
--   Usage of Mockito
--   Usage of PowerMock
+**Steps:**
 
-## Materials and Resources
+Create a TestClass:  **"TestCalculator"**
+1. Create a Test Method: **"testAddition"** 
+   * Implement **addition()** method which takes two integer parameter and returns integer result
+      `int addition(int a, in b)`
+   
+   * verify addition function with below input/output 
+        #### Input / Output: 
+         25, 20  --> 45
+         5, 10   --> 15 
+      
+2. Create a Test Method: **"testSubtraction"**
+    * Implement **subtraction()** method which takes two integer parameter and returns integer result
+       `int subtraction(int a, in b)`
 
-### Resources
+   * verify subtraction function with below input/output
+     #### Input / Output:
+         25, 20  --> 5
+         40, 10   --> 30 
 
--   [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
--   [JUnit 5 Tutorial](https://howtodoinjava.com/junit-5-tutorial/)
--   [Junit 5 Tutorial for Beginners](https://dev.to/saiupadhyayula/junit-5-tutorial-for-beginners-o8a)
-### Code Sessions:
--  [**Junit5 Annotations**](https://github.com/dci-dh-java-e21-01/Testing/tree/main/Junit5%20Annotations)
-- [**Junit5 Assertions**](https://github.com/dci-dh-java-e21-01/Testing/tree/main/Junit5%20Assertions)
--  [**Junit5 - Fix Non-Working Test Cases - Exercise**](https://github.com/dci-dh-java-e21-01/Testing/tree/main/Junit5%20-%20Fix%20Non-Working%20Test%20Cases/Template/EmployessJunitFix)
-- **Test Driven Development**
-- **AssertJ**
-- **Mockito**
--  **PowerMock**
+
+3. Create a Test Method: **"testMultiplication"**
+    * Implement **multiplication()** method which takes two integer parameter and returns integer result
+       `int testMultiplication(int a, in b)`
+
+    * verify multiplication function with below input/output
+      #### Input / Output:
+          25, 20  --> 5
+          40, 10   --> 30 
+
+4. Create a Test Method: **"testDivision"**
+    * Implement **division()** method which takes two integer parameter and returns integer result
+      `int testMultiplication(int a, in b)`
+
+    * verify multiplication function with below input/output
+      #### Input / Output:
+          25, 20  --> 5
+          40, 10   --> 30 
+    * Verify if someone divides by zero, an exception should be thrown.
